@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أ. وضاح أحمد الزليل | المعلم العربي المحترف</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Cairo -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#E5A93C',
+              goldHover: '#c9912e',
+              darkBg: '#0F172A',
+              cardBg: '#1E293B',
+              slateAccent: '#334155',
+              cyanAccent: '#0EA5E9'
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #0B0F17;
+      color: #F8FAFC;
+    }
+    
+    .gold-glow {
+      box-shadow: 0 0 25px rgba(229, 169, 60, 0.35);
+    }
+    
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF 30%, #E5A93C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .gold-gradient-bg {
+      background: linear-gradient(135deg, #E5A93C 0%, #B88124 100%);
+    }
+
+    .glass-card {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(229, 169, 60, 0.15);
+    }
+
+    .glass-card:hover {
+      border-color: rgba(229, 169, 60, 0.4);
+    }
+  </style>
+</head>
+<body class="pb-28 antialiased selection:bg-brand-gold selection:text-black">
+
+  <!-- Header Section -->
+  <header class="w-full py-6 px-4 border-b border-slate-800/80 sticky top-0 bg-[#0B0F17]/90 backdrop-blur-md z-40">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full gold-gradient-bg flex items-center justify-center text-slate-950 font-bold text-xl shadow-lg">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div>
+          <h1 class="font-bold text-lg leading-tight text-white">المعلم العربي المحترف</h1>
+          <p class="text-xs text-brand-gold font-medium">أ. وضاح أحمد الزليل</p>
+        </div>
+      </div>
+      <a href="https://wa.me/967780775927" target="_blank" class="hidden sm:flex items-center gap-2 gold-gradient-bg text-slate-950 px-4 py-2 rounded-xl text-sm font-bold hover:brightness-110 transition-all shadow-md">
+        <i class="fa-brands fa-whatsapp text-base"></i>
+        تواصل معي
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-4xl mx-auto px-4 pt-8 space-y-16">
+
+    <!-- Hero Section -->
+    <section class="text-center space-y-6 pt-4">
+      <!-- Profile Image with Glowing Border -->
+      <div class="relative w-44 h-44 mx-auto rounded-full p-1.5 gold-gradient-bg gold-glow transition-all duration-300 hover:scale-105">
+        <div class="w-full h-full rounded-full overflow-hidden bg-slate-900 flex items-center justify-center relative">
+          <img 
+            src="founder.jpg" 
+            alt="أ. وضاح أحمد حسن الزليل" 
+            class="w-full h-full object-cover"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80';"
+          />
+        </div>
+        <!-- Status Badge -->
+        <span class="absolute bottom-2 left-2 bg-emerald-500 text-slate-950 text-[11px] font-bold px-3 py-1 rounded-full border-2 border-[#0B0F17] flex items-center gap-1.5 shadow-md">
+          <span class="w-2 h-2 rounded-full bg-slate-950 animate-ping"></span>
+          متاح للفرص والتدريب
+        </span>
+      </div>
+
+      <!-- Hero Titles with Bilingual Name -->
+      <div class="space-y-3">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-slate-800/80 border border-brand-gold/30 text-brand-gold text-xs font-semibold">
+          <i class="fa-solid fa-star ml-1 text-brand-gold"></i> أكثر من 8 سنوات من التميز التعليمي والتحول الرقمي
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-black text-white tracking-wide">
+          أ. وضاح أحمد حسن <span class="gold-gradient-text">الزليل</span>
+        </h2>
+        <p class="text-lg sm:text-xl font-bold text-brand-gold tracking-wider">
+          Waddah Ahmed Hassan Al-Zulil
+        </p>
+        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed pt-2">
+          معلم لغة عربية وخبير في استراتيجيات التعلم النشط وتوظيف التقنية والذكاء الاصطناعي لبناء بيئات تعليمية حديثة وإبراز المحتوى التعليمي العربي.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Portfolio Section -->
+    <section class="space-y-6">
+      <div class="flex items-center gap-3">
+        <div class="w-2 h-8 gold-gradient-bg rounded-full"></div>
+        <h3 class="text-2xl font-bold text-white">🚀 مشاريع ونماذج نجاح</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Project 1 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden bg-slate-950 relative border-b border-slate-800">
+              <img src="المعلم العربي المحترف_e4df90.png" alt="تطبيق المعلم العربي المحترف" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 space-y-3">
+              <div class="flex justify-between items-start gap-2">
+                <h4 class="font-bold text-xl text-white">تطبيق المعلم العربي المحترف</h4>
+                <span class="text-[10px] px-2 py-1 bg-brand-gold/20 text-brand-gold font-bold rounded-md border border-brand-gold/30">المشروع الرئيسي</span>
+              </div>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                تطبيق للهاتف بالذكاء الاصطناعي يدعم المعلمين والمعلمات في التخطيط وتصميم العروض وإعداد الاختبارات والتطوير المهني.
+              </p>
+              <div class="p-3 bg-slate-900/80 rounded-xl border border-slate-800 text-xs text-brand-gold space-y-1">
+                <p class="font-bold">🗺️ خارطة الطريق:</p>
+                <p class="text-slate-400">إطلاق 2026 · نسخة أولى 2027 · انتشار عربي 2028 · ريادة 2030</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://remix-remix-648694958321.europe-west1.run.app/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 gold-gradient-bg text-slate-950 font-bold py-2.5 rounded-xl hover:brightness-110 transition-all text-sm shadow-md">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> رابط التطبيق
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden bg-slate-950 relative border-b border-slate-800">
+              <img src="المتجر الالكتروني_e4df90.jpg" alt="متجر اليماني الرقمي" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 space-y-3">
+              <h4 class="font-bold text-xl text-white">🛒 متجري الإلكتروني: اليماني 🇾🇪 | ALYAMANI STORE</h4>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                متجر رقمي يقدم حلولاً وأدوات عملية تساعد الأفراد ورواد الأعمال على تطوير أعمالهم وتحقيق أهدافهم بكفاءة واحترافية.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                <li><strong class="text-slate-200">قوالب Excel الذكية:</strong> إدارة المخزون، الأرباح، العملاء والمبيعات.</li>
+                <li><strong class="text-slate-200">الكتب والمنتجات الرقمية:</strong> التحرر الرقمي وتنظيم الوقت.</li>
+                <li><strong class="text-slate-200">خدمات السيرة الذاتية:</strong> بناء الهوية المهنية ومواقع تفاعلية.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://alhjwrywdah86-ship-it.github.io/alyamani-store/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-brand-cyanAccent text-slate-950 font-bold py-2.5 rounded-xl hover:brightness-110 transition-all text-sm shadow-md">
+              <i class="fa-solid fa-store"></i> رابط المتجر
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden bg-slate-950 relative border-b border-slate-800">
+              <img src="Screenshot_١٢٥٦٤٨_٢٠٢٦١١٠٦_e4df90.jpg" alt="حزمة التحرر من إدمان الهاتف" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5 space-y-3">
+              <h4 class="font-bold text-xl text-white">📵 حزمة التحرر من إدمان الهاتف | Digital Phone Detox Bundle</h4>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                حزمة متكاملة من الكتب باللغتين العربية والإنجليزية تساعدك على فهم علاقتك بالهاتف والخروج من دائرة الاستخدام المفرط مع الكاتب وضاح أحمد حسن الزليل.
+              </p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://alhjwrywdah86-ship-it-digital-freed.vercel.app/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-500 text-slate-950 font-bold py-2.5 rounded-xl hover:brightness-110 transition-all text-sm shadow-md">
+              <i class="fa-solid fa-book-open"></i> رابط الحزمة
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="glass-card p-6 rounded-2xl space-y-4 hover:-translate-y-1 transition-transform">
+          <div class="w-12 h-12 rounded-xl gold-gradient-bg flex items-center justify-center text-slate-950 font-black text-xl shadow-lg">
+            <i class="fa-solid fa-book-bookmark"></i>
+          </div>
+          <h4 class="font-bold text-xl text-white">📚 تطبيق التعلم النشط داخل الصفوف</h4>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            تحويل الدروس إلى أنشطة تفاعلية رفعت مستوى مشاركة الطلاب واستيعابهم المفاهيم اللغوية عبر 5 مدارس عملت بها.
+          </p>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="glass-card p-6 rounded-2xl space-y-4 hover:-translate-y-1 transition-transform">
+          <div class="w-12 h-12 rounded-xl bg-brand-cyanAccent flex items-center justify-center text-slate-950 font-black text-xl shadow-lg">
+            <i class="fa-solid fa-desktop"></i>
+          </div>
+          <h4 class="font-bold text-xl text-white">🖥️ إنتاج محتوى تعليمي رقمي</h4>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            تصميم عروض وحقائب تعليمية احترافية باستخدام أدوات Canva وPowerPoint وتقنيات الذكاء الاصطناعي المتقدمة.
+          </p>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="glass-card p-6 rounded-2xl space-y-4 hover:-translate-y-1 transition-transform">
+          <div class="w-12 h-12 rounded-xl bg-purple-500 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h4 class="font-bold text-xl text-white">💡 تدريب الطلاب على التفكير والإبداع</h4>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            تطوير برامج ومبادرات صفية تنمّي مهارات التفكير النقدي وتُحسن مستوى التحصيل العلمي للطلاب في مادة اللغة العربية.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Academic Qualifications Section -->
+    <section class="space-y-6">
+      <div class="flex items-center gap-3">
+        <div class="w-2 h-8 gold-gradient-bg rounded-full"></div>
+        <h3 class="text-2xl font-bold text-white">🎓 المؤهلات العلمية</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- cert1 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col">
+          <div class="h-44 overflow-hidden bg-slate-950 border-b border-slate-800">
+            <img src="cert1.jpg" alt="شهادة البكالوريوس" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 space-y-2 flex-1">
+            <span class="text-[10px] px-2 py-0.5 bg-brand-gold/10 text-brand-gold rounded font-bold border border-brand-gold/20">جامعة عمران · 2009م</span>
+            <h4 class="font-bold text-base text-white">بكالوريوس في التربية (لغة عربية)</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              تخصص رئيسي لغة عربية وفرعي تربية إسلامية بتقدير عام <strong class="text-brand-gold">جيد جداً (81.61%)</strong> من كلية التربية والعلوم التطبيقية بحجة.
+            </p>
+          </div>
+        </div>
+
+        <!-- cert2 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col">
+          <div class="h-44 overflow-hidden bg-slate-950 border-b border-slate-800">
+            <img src="cert2.jpg" alt="دبلوم سكرتارية" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 space-y-2 flex-1">
+            <span class="text-[10px] px-2 py-0.5 bg-brand-cyanAccent/10 text-brand-cyanAccent rounded font-bold border border-brand-cyanAccent/20">معهد هاي الأمريكي · 2013م</span>
+            <h4 class="font-bold text-base text-white">دبلوم سكرتارية وتدريب إداري</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              إتمام الدورات في مجال السكرتارية والتنظيم الإداري بنجاح وبتقدير <strong class="text-brand-cyanAccent">جيد جداً (88%)</strong> صنعاء.
+            </p>
+          </div>
+        </div>
+
+        <!-- cert3 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col">
+          <div class="h-44 overflow-hidden bg-slate-950 border-b border-slate-800">
+            <img src="cert3.jpg" alt="الثانوية العامة" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 space-y-2 flex-1">
+            <span class="text-[10px] px-2 py-0.5 bg-slate-800 text-slate-400 rounded font-bold">مدرسة النصر العلمية · 2003م</span>
+            <h4 class="font-bold text-base text-white">شهادة الثانوية العامة (القسم العلمي)</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              مدرسة النصر العلمية كشر - محافظة حجة، بتقدير عام بنسبة نجاح <strong class="text-slate-200">77.75%</strong>.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Training Courses Section -->
+    <section class="space-y-6">
+      <div class="flex items-center gap-3">
+        <div class="w-2 h-8 gold-gradient-bg rounded-full"></div>
+        <h3 class="text-2xl font-bold text-white">📚 الدورات التدريبية</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- cert4 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col">
+          <div class="h-44 overflow-hidden bg-slate-950 border-b border-slate-800">
+            <img src="cert4.jpg" alt="استراتيجيات التعلم النشط" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 space-y-2 flex-1">
+            <span class="text-[10px] px-2 py-0.5 bg-brand-gold/10 text-brand-gold rounded font-bold border border-brand-gold/20">16–24 أغسطس 2023م</span>
+            <h4 class="font-bold text-base text-white">الأسبوع التدريبي الثالث للمعلمين والمعلمات</h4>
+            <p class="text-xs text-slate-400 font-medium">المدارس النموذجية الحديثة</p>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              شهادة مشاركة في أسبوع تدريبي مخصص لاستراتيجيات التعلم النشط، وهو محور تدريسي الحالي.
+            </p>
+          </div>
+        </div>
+
+        <!-- cert5 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col">
+          <div class="h-44 overflow-hidden bg-slate-950 border-b border-slate-800">
+            <img src="cert5.jpg" alt="أساسيات التسويق الرقمي" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 space-y-2 flex-1">
+            <span class="text-[10px] px-2 py-0.5 bg-brand-cyanAccent/10 text-brand-cyanAccent rounded font-bold border border-brand-cyanAccent/20">27 مارس 2026 · 3 ساعات</span>
+            <h4 class="font-bold text-base text-white">أساسيات التسويق الرقمي</h4>
+            <p class="text-xs text-slate-400 font-medium">AlqadasiBiz for Business & Marketing Solutions</p>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              دورة أونلاين في أساسيات التسويق الرقمي، أدعم بها نشر «المعلم العربي المحترف» والوصول إلى المعلمين.
+            </p>
+          </div>
+        </div>
+
+        <!-- cert6 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col">
+          <div class="h-44 overflow-hidden bg-slate-950 border-b border-slate-800">
+            <img src="cert6.jpg" alt="الأمن السيبراني والذكاء الاصطناعي" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 space-y-2 flex-1">
+            <span class="text-[10px] px-2 py-0.5 bg-purple-500/10 text-purple-400 rounded font-bold border border-purple-500/20">26 مارس 2026 · 3 ساعات</span>
+            <h4 class="font-bold text-base text-white">أساسيات الأمن السيبراني واستراتيجيات الذكاء الاصطناعي</h4>
+            <p class="text-xs text-slate-400 font-medium">Albalasmeh Business Company LTD – UK</p>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              دورة أونلاين تعزّز توظيفي الآمن والواعي للذكاء الاصطناعي في التعليم.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Excellence & Appreciation Certificates Section -->
+    <section class="space-y-6">
+      <div class="flex items-center gap-3">
+        <div class="w-2 h-8 gold-gradient-bg rounded-full"></div>
+        <h3 class="text-2xl font-bold text-white">🏅 شهادات التفوق والتكريم</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- cert7 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col">
+          <div class="h-44 overflow-hidden bg-slate-950 border-b border-slate-800">
+            <img src="cert7.jpg" alt="شهادة التفوق الجامعي" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 space-y-2 flex-1">
+            <span class="text-[10px] px-2 py-0.5 bg-brand-gold/10 text-brand-gold rounded font-bold border border-brand-gold/20">كلية التربية بحجة</span>
+            <h4 class="font-bold text-base text-white">شهادة تفوق جامعي</h4>
+            <p class="text-xs text-slate-400 font-medium">الاتحاد العام لطلاب اليمن</p>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              تكريم على التفوق العلمي في قسم اللغة العربية خلال الدراسة الجامعية.
+            </p>
+          </div>
+        </div>
+
+        <!-- cert8 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col">
+          <div class="h-44 overflow-hidden bg-slate-950 border-b border-slate-800">
+            <img src="cert8.jpg" alt="مدارس نبلاء اليمن" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 space-y-2 flex-1">
+            <span class="text-[10px] px-2 py-0.5 bg-slate-800 text-slate-400 rounded font-bold">صنعاء · العام 2011/2012م</span>
+            <h4 class="font-bold text-base text-white">شكر وتقدير – مدارس نبلاء اليمن النموذجية</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              تقدير لجهودي في إنجاح العملية التربوية والتعليمية في مجال التدريس.
+            </p>
+          </div>
+        </div>
+
+        <!-- cert9 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col">
+          <div class="h-44 overflow-hidden bg-slate-950 border-b border-slate-800">
+            <img src="cert9.jpg" alt="المدارس النموذجية الحديثة" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 space-y-2 flex-1">
+            <span class="text-[10px] px-2 py-0.5 bg-slate-800 text-slate-400 rounded font-bold">مأرب · العام الدراسي 2023–2024م</span>
+            <h4 class="font-bold text-base text-white">شكر وعرفان – المدارس النموذجية الحديثة</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              شكر على الجهود المبذولة والتفاني في العملية التعليمية.
+            </p>
+          </div>
+        </div>
+
+        <!-- cert10 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col">
+          <div class="h-44 overflow-hidden bg-slate-950 border-b border-slate-800">
+            <img src="cert10.jpg" alt="المدارس النموذجية الحديثة" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 space-y-2 flex-1">
+            <span class="text-[10px] px-2 py-0.5 bg-slate-800 text-slate-400 rounded font-bold">مأرب · العام الدراسي 2024–2025م</span>
+            <h4 class="font-bold text-base text-white">شكر وتقدير – المدارس النموذجية الحديثة</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              تقدير للجهود المبذولة في إنجاح العملية التعليمية.
+            </p>
+          </div>
+        </div>
+
+        <!-- cert11 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col">
+          <div class="h-44 overflow-hidden bg-slate-950 border-b border-slate-800">
+            <img src="cert11.jpg" alt="إنجاح حركة الباصات" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 space-y-2 flex-1">
+            <span class="text-[10px] px-2 py-0.5 bg-slate-800 text-slate-400 rounded font-bold">مأرب · العام 2024–2025م</span>
+            <h4 class="font-bold text-base text-white">شهادة شكر – المدارس النموذجية الحديثة</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              شكر على الجهد وروح التعاون التي ساهمت في إنجاح حركة الباصات المدرسية.
+            </p>
+          </div>
+        </div>
+
+        <!-- cert12 -->
+        <div class="glass-card rounded-2xl overflow-hidden hover:-translate-y-1 transition-transform flex flex-col">
+          <div class="h-44 overflow-hidden bg-slate-950 border-b border-slate-800">
+            <img src="cert12.jpg" alt="مدارس أجيال المستقبل" class="w-full h-full object-cover">
+          </div>
+          <div class="p-5 space-y-2 flex-1">
+            <span class="text-[10px] px-2 py-0.5 bg-brand-gold/10 text-brand-gold rounded font-bold border border-brand-gold/20">مأرب · العام 2025–2026م</span>
+            <h4 class="font-bold text-base text-white">شكر وتقدير – مدارس أجيال المستقبل النموذجية</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              تقدير للجهود في خدمة العملية التربوية والتعليمية خلال العام الحالي.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Timeline Experience Section -->
+    <section class="space-y-6">
+      <div class="flex items-center gap-3">
+        <div class="w-2 h-8 gold-gradient-bg rounded-full"></div>
+        <h3 class="text-2xl font-bold text-white">الخبرات العملية والمسيرة المهنية</h3>
+      </div>
+
+      <div class="relative border-r-2 border-slate-800 mr-4 pr-6 space-y-8">
+
+        <div class="relative group">
+          <div class="absolute -right-[31px] top-1.5 w-4 h-4 rounded-full bg-brand-gold border-4 border-[#0B0F17] group-hover:scale-125 transition-transform"></div>
+          <div class="glass-card p-5 rounded-2xl space-y-2">
+            <div class="flex flex-wrap justify-between items-center gap-2">
+              <h4 class="font-bold text-lg text-white">مدرس لغة عربية وتطوير تقني</h4>
+              <span class="text-xs px-3 py-1 bg-brand-gold/10 text-brand-gold rounded-lg font-bold border border-brand-gold/20">2025 - حتى الآن</span>
+            </div>
+            <p class="text-sm font-semibold text-slate-400">مدارس أجيال المستقبل - مأرب</p>
+            <p class="text-sm text-slate-300 leading-relaxed">تدريس المرحلة الأساسية وتطوير أساليب تعليم حديثة قائمة على الأنشطة التفاعلية والذكاء الاصطناعي.</p>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="absolute -right-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-[#0B0F17] group-hover:bg-brand-gold transition-colors"></div>
+          <div class="glass-card p-5 rounded-2xl space-y-2">
+            <div class="flex flex-wrap justify-between items-center gap-2">
+              <h4 class="font-bold text-lg text-white">مدرس لغة عربية ومصمم محتوى رقمي</h4>
+              <span class="text-xs px-3 py-1 bg-slate-800 text-slate-400 rounded-lg font-bold">2023 - 2025</span>
+            </div>
+            <p class="text-sm font-semibold text-slate-400">المدارس النموذجية الحديثة - مأرب</p>
+            <p class="text-sm text-slate-300 leading-relaxed">تطبيق استراتيجيات التعلم النشط وتصميم الوسائط التفاعلية وإنتاج عروض تعليمية رقمية متقدمة.</p>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="absolute -right-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-[#0B0F17] group-hover:bg-brand-gold transition-colors"></div>
+          <div class="glass-card p-5 rounded-2xl space-y-2">
+            <div class="flex flex-wrap justify-between items-center gap-2">
+              <h4 class="font-bold text-lg text-white">مدرس لغة عربية وتربية إسلامية</h4>
+              <span class="text-xs px-3 py-1 bg-slate-800 text-slate-400 rounded-lg font-bold">2011 - 2013</span>
+            </div>
+            <p class="text-sm font-semibold text-slate-400">مدارس نبلاء اليمن النموذجية - صنعاء</p>
+            <p class="text-sm text-slate-300 leading-relaxed">تدريس الصفوف الأساسية والثانوية وتطوير مهارات القراءة والتفكير النقدي لدى الطلاب.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="space-y-6">
+      <div class="flex items-center gap-3">
+        <div class="w-2 h-8 gold-gradient-bg rounded-full"></div>
+        <h3 class="text-2xl font-bold text-white">المهارات والخبرات التقنية</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="glass-card p-6 rounded-2xl space-y-4">
+          <h4 class="font-bold text-brand-gold text-lg flex items-center gap-2">
+            <i class="fa-solid fa-chalkboard-user"></i> المهارات التربوية والتعليمية
+          </h4>
+
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-1">
+                <span class="text-slate-200">استراتيجيات التعلم النشط</span>
+                <span class="text-brand-gold">95%</span>
+              </div>
+              <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full gold-gradient-bg rounded-full" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-1">
+                <span class="text-slate-200">التخطيط للتدريس وإعداد الخطط</span>
+                <span class="text-brand-gold">92%</span>
+              </div>
+              <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full gold-gradient-bg rounded-full" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-1">
+                <span class="text-slate-200">إدارة الصف وبناء الاختبارات</span>
+                <span class="text-brand-gold">90%</span>
+              </div>
+              <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full gold-gradient-bg rounded-full" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl space-y-4">
+          <h4 class="font-bold text-brand-cyanAccent text-lg flex items-center gap-2">
+            <i class="fa-solid fa-laptop-code"></i> التقنية والذكاء الاصطناعي
+          </h4>
+
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-1">
+                <span class="text-slate-200">الذكاء الاصطناعي (ChatGPT & AI Tools)</span>
+                <span class="text-brand-cyanAccent">95%</span>
+              </div>
+              <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full bg-brand-cyanAccent rounded-full" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-1">
+                <span class="text-slate-200">تصميم الوسائط والمحتوى (Canva)</span>
+                <span class="text-brand-cyanAccent">90%</span>
+              </div>
+              <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full bg-brand-cyanAccent rounded-full" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-1">
+                <span class="text-slate-200">إدارة الفصول الافتراضية (Google Classroom)</span>
+                <span class="text-brand-cyanAccent">88%</span>
+              </div>
+              <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                <div class="h-full bg-brand-cyanAccent rounded-full" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Mobile Action Bar -->
+  <div class="fixed bottom-4 left-4 right-4 max-w-md mx-auto z-50">
+    <div class="bg-slate-900/90 border border-brand-gold/40 backdrop-blur-xl p-2.5 rounded-2xl shadow-2xl flex items-center justify-between gap-2">
+      <a href="tel:00967780775927" class="flex-1 flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-slate-800 text-white hover:bg-slate-700 transition-colors">
+        <i class="fa-solid fa-phone text-brand-gold text-lg mb-1"></i>
+        <span class="text-[11px] font-bold">اتصال هاتف</span>
+      </a>
+
+      <a href="https://wa.me/967780775927" target="_blank" class="flex-1 flex flex-col items-center justify-center py-2 px-1 rounded-xl gold-gradient-bg text-slate-950 font-bold hover:brightness-110 transition-all shadow-md">
+        <i class="fa-brands fa-whatsapp text-lg mb-1"></i>
+        <span class="text-[11px]">واتساب مباشر</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/205345421" target="_blank" class="flex-1 flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-slate-800 text-white hover:bg-slate-700 transition-colors">
+        <i class="fa-brands fa-linkedin-in text-brand-cyanAccent text-lg mb-1"></i>
+        <span class="text-[11px] font-bold">LinkedIn</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+  </html>
